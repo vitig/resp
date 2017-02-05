@@ -1,16 +1,215 @@
-@media only screen and (min-width: 1024px){
-
+@media only screen and (max-width: 639px){
+	#header{
+		min-height: 2.375rem;
+		line-height: 2.375rem;
+		font-size: .9rem;
+	}
+	.navi_descr{
+		margin-left: 1rem;
+	}
+	.menu_btn{
+		font-size: 1.2rem;
+		width: 2.375rem;
+		height: 2.375rem;
+	}
+	.banner{
+		min-height: 170px;
+	}
+	.banner_content{
+		width: 15rem;
+	}
+	.banner_text{
+		font-size: 1.2rem;
+	}
+	.robin_block{
+		min-height: 75px;
+	}
+	.robin_link{
+		min-width: 75px;
+	}
+	.robin_text{
+		font-size: .6rem;
+	}
+	.article_text:not(:first-child){
+		display: none;
+	}
+	.article_paragraph{
+		font-size: .9rem;
+	}
+	.banner_content, .robin_text, .article_header, .article_content{
+		margin: 0 2rem;
+	}
+	.violet{
+		width: 100%;
+		min-height: 275px;
+	}
+	.banner_link{
+		font-size: .9rem;
+	}
+	.arrow{
+		font-size: 2rem;
+	}
+	.banner .arrow{
+		right: 1rem;
+		bottom: -.5rem;
+	}	
 }
-@media only screen and (min-width: 980px){
+@media only screen and (max-width: 979px){
+	.article_text{
+		width: 100%;
+	}
+	.navi_menu{
+		display: none;
+	}
+	.menu_btn{
+		font-family: "FontAwesome";
+		float: right;
+		position: relative;
+		background-color: rgb(32, 37, 41);
+	}
+	.menu_btn::before{
+		content: "\f0c9";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+	.wrapper{
+		width: 100%;
+	}
+	.city_link, .people_link{
+		margin-bottom: -3px;
+	}
+}
+@media (min-width: 640px) and (max-width: 979px){
+	#header{
+		min-height: 4.68rem;
+		line-height: 4.68rem;
+		font-size: 1.5rem;
+	}
+	.navi_descr{
+		margin-left: 2rem;
+	}
+	.menu_btn{
+		font-size: 2rem;
+		width: 4.68rem;
+		height: 4.68rem;
+		position: relative;
+	}
+	.banner{
+		min-height: 348.5px;
+	}
+	.banner_content{
+		width: 30rem;
+	}
+	.banner_text{
+		font-size: 2.4rem;
+	}
+	.robin_block{
+		min-height: 150px;
+	}
+	.robin_link{
+		min-width: 150px;
+	}
+	.robin_text{
+		font-size: 1.3rem;
+	}
+	.article_text:not(:first-child){
+		display: none;
+	}
+	.article_paragraph{
+		font-size: 1.5rem;
+	}
+	.banner_content, .robin_text, .article_header, .article_content{
+		margin: 0 3rem;
+	}
+	.violet{
+		width: 100%;
+		min-height: 550px;
+	}
+	.arrow{
+		font-size: 4rem;
+	}
+} 
+
+@media (min-width: 980px){
+	#header{
+		min-height: 6rem;
+		line-height: 6rem;
+	}
 	.navi_descr, .menu_btn{
 		display: none;
 	}
+	.navi_menu{
+		margin-left: 3.5rem;
+	}
+	.banner{
+		min-height: 547px;
+	}
+	.robin_block{
+		min-height: 245px;
+	}
+	.robin_link{
+		min-width: 245px;
+		min-height: 245px;
+	}
+	.robin_text{		
+		font-size: 1.875rem;
+	}
+	.wrapper{
+		display: flex;
+	}
+	.violet_link{	
+		padding-bottom: 3px;
+	}
+	.violet{
+		width: 100%;
+		height: 100%;
+		background-color: rgb(91, 15, 161);
+	}
+	.article_content{
+		flex-direction: row;
+	}
+	.article_text{
+		width: 50%;
+	}
+	.article_paragraph{
+		font-size: 0.9rem;
+	}
+	.banner_content, .robin_text, .article_header, .article_content{
+		margin: 0 5rem;
+	}
+	.banner_content{
+		width: 45rem;
+	}
+	.banner_text{
+		font-size: 3.75rem;
+	}
+	.menu_item{
+		display: inline-block;
+		text-transform: uppercase;
+		vertical-align: middle;
+		line-height: 26px;
+		text-align: justify;
+		margin-right: 1.2rem;
+		font-size: 0.9rem;
+	}
+	.banner_link{
+		font-size: 2.1rem;
+	}
+	.arrow{
+		font-size: 5rem;
+	}
+	.banner .arrow{
+		right: 1.5rem;
+		bottom: -1.2rem;
+	}
 } 
-@media only screen and (max-width: 979px){
-	
-} 
-@media only screen and (min-width: 1024px){
-	
+
+@media (min-width: 1024px){
+	.banner{
+		min-height: 575px;
+	}
 }
 
 *{
@@ -29,44 +228,41 @@ html, body{
 }
 
 #header{
-	min-height: 6rem;
 	background-color: rgb(55, 60, 63);
 	color: white;
-	line-height: 6rem;
 }
-.menu_item{
+
+/*.menu_item{
 	display: inline-block;
 	text-transform: uppercase;
 	vertical-align: middle;
 	line-height: 26px;
 	text-align: justify;
-}
+	margin-right: 1.2rem;
+	font-size: 0.9rem;
+}*/
 .banner{
-	min-height: 575px;
 	background: linear-gradient(119deg, rgb(40, 185, 202), rgb(22, 144, 169));
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 .banner_content{
-	width: 45rem;
-	margin: 0 5rem; 
 	vertical-align: middle;
+	position: relative;
 }
 .banner_text{
 	display: inline-block;
-	font-size: 3.75rem;
 	color: white;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 .banner_link{
 	display: inline-block;
 	text-decoration: none;
-	font-size: 2.1rem;
 	color: rgb(168, 214, 224);
 }
 .robin_block{
-	min-height: 245px;
+	/*min-height: 245px;*/
 	display: flex;
 	flex-direction: row;
 }
@@ -80,33 +276,29 @@ html, body{
 }
 .robin_link{
 	display: inline-block;
-	min-width: 245px;
-	min-height: 245px;
+/*	min-width: 245px;
+	min-height: 245px;*/
 	background-color: rgb(188, 49, 131);
+	position: relative;
 }
 .robin_text{
 	color: rgb(147, 131, 161);
-	font-size: 1.875rem;
 	vertical-align: middle;
-	margin: 0 5rem;
+	/*margin: 0 5rem;*/
 }
-.wrapper{
-	/*min-height: 295px;*/
+/*.wrapper{
 	display: flex;
-	align-items: stretch;
-	justify-content: space-around;
-}
+}*/
 .link_bar{
 	display: block;
 	width: 100%;
 }
-.violet_link{	
+/*.violet_link{	
 	padding-bottom: 3px;
-}
+}*/
 .violet{
-	width: 100%;
-	height: 100%;
 	background-color: rgb(91, 15, 161);
+	position: relative;
 }
 .link_img{
 	width: 100%;
@@ -118,15 +310,13 @@ html, body{
 	display: inline-block;
 	font-size: 1.875rem;
 	color: rgb(8, 140, 165);
-	margin: 3rem 5rem 2rem;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
 }
 .article_content{
-	margin: 0 5rem;
 	display: flex;
-	flex-direction: row;
 }
 .article_text{
-	width: 50%;
 	display: flex;
 	flex-direction: column;
 }
@@ -134,9 +324,26 @@ html, body{
 	margin-left: 3rem;
 }
 .article_paragraph{
-	font-size: 0.9rem;
+	/*font-size: 0.9rem;*/
 	margin-bottom: 3rem;
 	color: rgb(81, 81, 81);
 	line-height: 26px;
 }
+.arrow{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	/*font-size: 5rem;	*/
+	padding: 0;
+	margin: 0;
+}
 
+.robin_link .arrow, 
+.violet .arrow{
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
