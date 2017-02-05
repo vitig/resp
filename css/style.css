@@ -35,6 +35,7 @@
 	}
 	.article_paragraph{
 		font-size: .9rem;
+		margin-bottom: 1.5rem;
 	}
 	.banner_content, .robin_text, .article_header, .article_content{
 		margin: 0 2rem;
@@ -49,10 +50,18 @@
 	.arrow{
 		font-size: 2rem;
 	}
+	.violet .arrow{
+		font-size: 4rem;
+	}
 	.banner .arrow{
 		right: 1rem;
 		bottom: -.5rem;
 	}	
+	.article_header{
+		font-size: 1.3rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
 }
 @media only screen and (max-width: 979px){
 	.article_text{
@@ -105,6 +114,9 @@
 	.banner_text{
 		font-size: 2.4rem;
 	}
+	.banner_link{
+		font-size: 1.5rem;
+	}
 	.robin_block{
 		min-height: 150px;
 	}
@@ -116,19 +128,33 @@
 	}
 	.article_text:not(:first-child){
 		display: none;
-	}
+	}	
 	.article_paragraph{
 		font-size: 1.5rem;
+		margin-bottom: 3rem;
+		line-height: 2.5rem;
 	}
 	.banner_content, .robin_text, .article_header, .article_content{
 		margin: 0 3rem;
+	}
+	.article_header{
+		font-size: 2rem;
+		margin-top: 3rem;
+		margin-bottom: 2rem;
 	}
 	.violet{
 		width: 100%;
 		min-height: 550px;
 	}
 	.arrow{
-		font-size: 4rem;
+		font-size: 3rem;
+	}
+	.violet .arrow{
+		font-size: 5rem;
+	}
+	.banner .arrow{
+		right: 2rem;
+		bottom: -.5rem;
 	}
 } 
 
@@ -170,14 +196,22 @@
 	.article_content{
 		flex-direction: row;
 	}
+	
 	.article_text{
 		width: 50%;
 	}
 	.article_paragraph{
 		font-size: 0.9rem;
+		line-height: 26px;
+		margin-bottom: 2rem;
 	}
 	.banner_content, .robin_text, .article_header, .article_content{
 		margin: 0 5rem;
+	}
+	.article_header{
+		font-size: 1.875rem;
+		margin-top: 3rem;
+		margin-bottom: 2rem;
 	}
 	.banner_content{
 		width: 45rem;
@@ -204,6 +238,9 @@
 		right: 1.5rem;
 		bottom: -1.2rem;
 	}
+	.article{
+	min-height: calc(565px - 3rem);
+}
 } 
 
 @media (min-width: 1024px){
@@ -231,16 +268,6 @@ html, body{
 	background-color: rgb(55, 60, 63);
 	color: white;
 }
-
-/*.menu_item{
-	display: inline-block;
-	text-transform: uppercase;
-	vertical-align: middle;
-	line-height: 26px;
-	text-align: justify;
-	margin-right: 1.2rem;
-	font-size: 0.9rem;
-}*/
 .banner{
 	background: linear-gradient(119deg, rgb(40, 185, 202), rgb(22, 144, 169));
 	display: flex;
@@ -262,7 +289,6 @@ html, body{
 	color: rgb(168, 214, 224);
 }
 .robin_block{
-	/*min-height: 245px;*/
 	display: flex;
 	flex-direction: row;
 }
@@ -276,26 +302,17 @@ html, body{
 }
 .robin_link{
 	display: inline-block;
-/*	min-width: 245px;
-	min-height: 245px;*/
 	background-color: rgb(188, 49, 131);
 	position: relative;
 }
 .robin_text{
 	color: rgb(147, 131, 161);
 	vertical-align: middle;
-	/*margin: 0 5rem;*/
 }
-/*.wrapper{
-	display: flex;
-}*/
 .link_bar{
 	display: block;
 	width: 100%;
 }
-/*.violet_link{	
-	padding-bottom: 3px;
-}*/
 .violet{
 	background-color: rgb(91, 15, 161);
 	position: relative;
@@ -303,15 +320,10 @@ html, body{
 .link_img{
 	width: 100%;
 }
-.article{
-	min-height: calc(565px - 3rem);
-}
+
 .article_header{
 	display: inline-block;
-	font-size: 1.875rem;
 	color: rgb(8, 140, 165);
-	margin-top: 3rem;
-	margin-bottom: 2rem;
 }
 .article_content{
 	display: flex;
@@ -324,10 +336,7 @@ html, body{
 	margin-left: 3rem;
 }
 .article_paragraph{
-	/*font-size: 0.9rem;*/
-	margin-bottom: 3rem;
 	color: rgb(81, 81, 81);
-	line-height: 26px;
 }
 .arrow{
 	font-family: 'Quicksand', sans-serif;
@@ -336,11 +345,9 @@ html, body{
 	color: white;
 	text-decoration: none;
 	position: absolute;
-	/*font-size: 5rem;	*/
 	padding: 0;
 	margin: 0;
 }
-
 .robin_link .arrow, 
 .violet .arrow{
 	top: 45%;
