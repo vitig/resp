@@ -34,12 +34,17 @@ html, body{
 	color: white;
 	line-height: 6rem;
 }
+.navi_menu{
+	margin-left: 3.5rem;
+}
 .menu_item{
 	display: inline-block;
 	text-transform: uppercase;
 	vertical-align: middle;
 	line-height: 26px;
 	text-align: justify;
+	margin-right: 1.2rem;
+	font-size: 0.9rem;
 }
 .banner{
 	min-height: 575px;
@@ -52,6 +57,7 @@ html, body{
 	width: 45rem;
 	margin: 0 5rem; 
 	vertical-align: middle;
+	position: relative;
 }
 .banner_text{
 	display: inline-block;
@@ -83,6 +89,7 @@ html, body{
 	min-width: 245px;
 	min-height: 245px;
 	background-color: rgb(188, 49, 131);
+	position: relative;
 }
 .robin_text{
 	color: rgb(147, 131, 161);
@@ -91,7 +98,6 @@ html, body{
 	margin: 0 5rem;
 }
 .wrapper{
-	/*min-height: 295px;*/
 	display: flex;
 	align-items: stretch;
 	justify-content: space-around;
@@ -107,6 +113,7 @@ html, body{
 	width: 100%;
 	height: 100%;
 	background-color: rgb(91, 15, 161);
+	position: relative;
 }
 .link_img{
 	width: 100%;
@@ -139,4 +146,25 @@ html, body{
 	color: rgb(81, 81, 81);
 	line-height: 26px;
 }
-
+.arrow{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	font-size: 5rem;	
+	
+	padding: 0;
+	margin: 0;
+}
+.banner .arrow{
+	right: 1.5rem;
+	bottom: -1.2rem;
+}
+.robin_link .arrow, 
+.violet .arrow{
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
